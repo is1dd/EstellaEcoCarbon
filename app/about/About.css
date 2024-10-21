@@ -22,19 +22,19 @@
     display: flex;
     align-items: center;
     text-align: start;
-    gap: 40px;
+   
   }
   .mission-section{
     display: flex;
     align-items: center;
     text-align: end;
-    gap: 40px;
+  
   }
   .extra-section{
     display: flex;
     align-items: center;
     text-align: end;
-    gap: 40px;
+  
   }
   
   .section-image {

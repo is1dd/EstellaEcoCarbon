@@ -21,7 +21,7 @@ function About() {
         <div style={{background: "linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 108.28%);"}} className='z-0 w-full max-sm:h-[24.5rem] md:h-[50rem] absolute opacity-90 -top-24'></div>
         </div>
         <div className="lg:w-[993px] relative -bottom-12 h-[441px] max-sm:w-[17.5rem] max-sm:h-[8.8rem] max-sm:px-3  md:py-10 px-12 max-sm:m-[1rem] sm:m-[4rem] rounded-[24px] bg-black bg-opacity-[50%] text-white">
-          <h1 className='max-sm:pt-8 leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:text-5xl font-[600]'>About Us</h1>
+          <h1 className='max-sm:pt-8 leading-[3.6rem] max-sm:text-xs text-[2.5rem] poppins md:pb-3 md:text-5xl font-[600]'>About Us</h1>
           <h1 className=" md:leading-tight lg:leading-[80.66px] text-white lg:mb-[20px] max-sm:text-xs md:w-[25rem] lg:w-[30rem]  poppins font-[600] md:text-5xl lg:text-[56px] ">Welcome to EstellaEcoCarbon</h1>
           <p  className="max-sm:text-[10px] md:leading-10 lg:leading-[44.04px] text-[24px] montserrat font-[400]">
           We are committed to delivering high-quality, sustainable activated carbon solutions to a diverse range of industries.
@@ -33,45 +33,50 @@ function About() {
 
 
       <section>
-      <div className="vision-mission-container">
+      <div className="md:px-40 Montserrat px-2">
       {/* Vision Section */}
-      <div className="vision-section">
-        <Image  src={vis} alt="Vision" className="max-sm:w-[158px] w-[20rem] h-auto" />
+      <div className="vision-section max-sm:-mt-20 gap-[20px] md:gap-[40px]">
+        <Image  src={vis} alt="Vision" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
         <div className="text-justify">
-          <h2 className='max-sm:text-[12px] text-[28px] mb-[10px]'>Vision</h2>
-          <p className='max-sm:text-[8px] text-[#555] leading-[1.5rem] text-[16px]'>
+          <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Vision</h2>
+          <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
             To be the global leader in sustainable activated carbon solutions, 
             revolutionizing industries and promoting a healthier planet.
           </p>
         </div>
       </div>
-      <div className='h-[2px] w-full bg-black my-4'></div>
+      
       {/* Mission Section */}
-      <div className="mission-section">
-        <div className=" text-justify">
-          <h2 className='max-sm:text-[12px] text-[28px] mb-[10px]'>Mission</h2>
-          <p className='max-sm:text-[8px] text-[#555] leading-[1.5rem] text-[16px]'>
+      <div className="mission-section max-sm:mt-5 gap-[20px] md:gap-[40px]">
+        <div className=" text-right md:p-8">
+          <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Mission</h2>
+          <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
             To deliver sustainable, high-performance activated carbon solutions 
             that enhance the quality of life and contribute to a cleaner, healthier world.
           </p>
          
         </div>
-        <Image src={miss} alt="Mission" className="max-sm:w-[158px] w-[20rem] h-auto" />
+        <Image src={miss} alt="Mission" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
       </div>
-    <div className='h-[2px] w-full bg-black my-4'></div>
-      {/* Additional Section */}
-      <div className="flex max-sm:gap-[10px]  md:gap-[40px] items-center text-end ">
-        <p className="max-sm:text-[8px] montserrat max-sm:leading-[15.68px] text-[#555] leading-[1.5rem] text-[16px] mb-[20px] text-justify">
+    {/* Additional Section */}
+    <div className="mission-section my-10 gap-[20px] md:gap-[40px]">
+    <div className="text-justify md:p-8 ">
+        <p className="max-sm:text-[8px]  md:pr-10 leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]">
         Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
         Founded on the principles of innovation and sustainability, EstellaEcoCarbon has emerged as a leading force in the activated carbon industry. Our unwavering commitment to excellence has enabled us to develop a comprehensive range of products that cater to diverse applications across various sectors.
         </p>
        
-        <div >
-          <Image src={gp} alt="Extra 1" className="max-sm:w-[50rem] md:w-[100rem] h-auto rounded-[5px]" />
-          {/* <Image src={extraImage2} alt="Extra 2" className="extra-image" /> */}
         </div>
+          <Image src={gp} alt="Extra 1" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
+          {/* <Image src={extraImage2} alt="Extra 2" className="extra-image" /> */}
+        
       </div>
+      
     </div>
+
+
+
+    
       </section>
 
 
