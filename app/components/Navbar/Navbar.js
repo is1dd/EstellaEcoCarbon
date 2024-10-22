@@ -46,7 +46,7 @@ const Navbar = () => {
         <button className="max-sm:block hidden p-1  h-10 w-10 bg-black text-xl text-white" onClick={toggleDrawer}><div className="h-[2px] bg-white"/><div className="h-[2px] my-[10px] bg-white" /><div className="h-[2px] bg-white"/></button>
       </div>
 
-      <nav className="main-nav w-[1219px] ">
+      <nav className="main-nav w-[65%] ">
         <ul style={{lineHeight:'28.81px'}} className=" flex poppins font-[400px] text-[20px] px-[4%] w-full justify-between ">
           <li><Link href="/">HOME</Link></li>
           <li><Link href="/about">ABOUT US</Link></li>
