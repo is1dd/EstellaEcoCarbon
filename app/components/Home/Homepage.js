@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import ban from '../../images/home/image 1.png';
+import ban from '../../images/home/homepage.png';
 import aboutus from '../../images/aboutus.png'
 import product1 from '../../images/product1.png'
 import product2 from '../../images/product2.png'

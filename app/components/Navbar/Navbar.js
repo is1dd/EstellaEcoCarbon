@@ -41,27 +41,21 @@ const Navbar = () => {
       </div>
 
       <div className="logo-bar max-sm:px-2 px-[20px]">
-        <Image src={logo} alt="ECC Logo" className="logo" width={100} height={50} />
-        <button className="quote-btn">Get a Quote ➔</button>
-        <button className="max-sm:block hidden p-1  h-10 w-10 bg-black text-xl text-white" onClick={toggleDrawer}><div className="h-[2px] bg-white"/><div className="h-[2px] my-[10px] bg-white" /><div className="h-[2px] bg-white"/></button>
+        <Link href={'/'}><Image src={logo} alt="ECC Logo" className="logo" width={100} height={50} /></Link>
+        <Link href={'/contact'} className="quote-btn">Get a Quote ➔</Link>
+        <button className="max-sm:block hidden p-1  h-10 w-10 bg-black text-xl text-white" onClick={toggleDrawer}><div className="h-[2px] bg-white"/><div className="h-[2px] my-[8px] bg-white" /><div className="h-[2px] bg-white"/></button>
       </div>
 
-      <nav className="main-nav w-[65%] ">
+      <nav className="main-nav w-[64%] ">
         <ul style={{lineHeight:'28.81px'}} className=" flex poppins font-[400px] text-[20px] px-[4%] w-full justify-between ">
           <li><Link href="/">HOME</Link></li>
           <li><Link href="/about">ABOUT US</Link></li>
           <li className="logogo" > {/*<li className="logogo" onClick={toggleDropdown}> */}
-            <Link className="flex items-center" href='/product'><h1>PRODUCT</h1>
+            <Link className="flex items-center" href='/product'><h1>PRODUCTS</h1>
             <div className="h-[13px] p-1"><Image className="" src={arr} alt="arrow" width={10} height={10} /></div></Link>
            
             
-            {/* {isDropdownOpen && (
-              <ul className="dropdown">
-                <li><Link href="/product/product1">Product 1</Link></li>
-                <li><Link href="/product/product2">Product 2</Link></li>
-                <li><Link href="/product/product3">Product 3</Link></li>
-              </ul>
-            )} */}
+           
             <ul className="dropdown">
                 <li className='montserrat font-normal text-[20px]'><Link href="/product/product1">Granular Activted Carbon</Link></li>
                 <li className='montserrat font-normal text-[20px]'><Link href="/product/product2">Powder Activted Carbon</Link></li>
@@ -83,12 +77,11 @@ const Navbar = () => {
                 className=''
             ><div className="bg-gray-400 h-full">
               <div className="flex bg-[#333] text-white items-center justify-between p-2"><div className="text-2xl">Menu List</div><button className=" text-2xl font-semibold" onClick={toggleDrawer}>X</button></div>
-              
                 <div>
               <ul style={{lineHeight:'28.81px'}} className=" text-white  poppins font-[400px] text-[20px] px-[4%] w-full justify-between ">
-          <li><Link href="/">HOME</Link></li>
-          <li><Link href="/about">ABOUT US</Link></li>
-          <li className="logogo" > {/*<li className="logogo" onClick={toggleDropdown}> */}
+          <li className="my-2"><Link href="/">HOME</Link></li>
+          <li className="my-2"><Link href="/about">ABOUT US</Link></li>
+          <li className="logogo my-2" > {/*<li className="logogo" onClick={toggleDropdown}> */}
             <Link className="flex items-center" href='/product'><h1>PRODUCT</h1>
             <div className="h-[13px] p-1"><Image className="" src={arr} alt="arrow" width={10} height={10} /></div></Link>
            
@@ -100,12 +93,12 @@ const Navbar = () => {
                 <li className=''><Link href="/product/product3">Pelletized Activted Carbon</Link></li>
               </ul>
           </li>
-          <li><Link href="/activated">ACTIVATED CARBON</Link></li>
-          <li>
+          <li className="my-2"><Link href="/activated">ACTIVATED CARBON</Link></li>
+          <li className="my-2">
             <Link className="flex items-center" href="/application"><h1>APPLICATIONS</h1> </Link>
           </li>
-          <li><Link href="/service">SERVICES</Link></li>
-          <li><Link href="/contact">CONTACT US</Link></li>
+          <li className="my-2"><Link href="/service">SERVICES</Link></li>
+          <li className="my-2"><Link href="/contact">CONTACT US</Link></li>
         </ul></div>
         </div>
             </Drawer>

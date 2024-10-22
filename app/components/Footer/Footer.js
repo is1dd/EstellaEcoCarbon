@@ -40,9 +40,9 @@ const Footer = () => {
           <div className="max-sm:w-full w-[48.6rem] text-[#252525] flex">
             <div className='w-1/3 border-r-2 max-sm:border-r-[0.5px] border-black border-opacity-50 '> 
             <ul className="max-sm:leading-[18.35px] max-sm:text-[10px] leading-[44.04px] montserrat font-normal text-[24px] ">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Services</li>
+              <li><Link href={'/'}>Home</Link></li>
+              <li><Link href={'/about'}>About Us</Link></li>
+              <li><Link href={'/service'}>Services</Link></li>
               <li>Terms of Services</li>
               <li>Privacy Policy</li>
             </ul></div>

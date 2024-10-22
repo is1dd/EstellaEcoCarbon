@@ -1,5 +1,4 @@
 import React from 'react'
-import './About.css'
 import vis from '../images/vis.png';
 import miss from '../images/miss.png'
 import gp from '../images/gp.png'
@@ -7,7 +6,7 @@ import first from '../images/first.png'
 import secound from '../images/secound.png'
 import th from '../images/th.png'
 import fo from '../images/fo.png'
-import ban from '../images/aboutimag.png';
+import ban from '../images/about/about.png';
 import Image from 'next/image'
 import Quote from '../components/Home/Quote';
 
@@ -35,7 +34,7 @@ function About() {
       <section>
       <div className="md:px-40 Montserrat px-2">
       {/* Vision Section */}
-      <div className="vision-section max-sm:-mt-20 gap-[20px] md:gap-[40px]">
+      <div className="vision-section flex max-sm:-mt-20 gap-[20px] md:gap-[40px]">
         <Image  src={vis} alt="Vision" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
         <div className="text-justify">
           <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Vision</h2>
@@ -47,7 +46,7 @@ function About() {
       </div>
       
       {/* Mission Section */}
-      <div className="mission-section max-sm:mt-5 gap-[20px] md:gap-[40px]">
+      <div className="flex mission-section max-sm:mt-5 gap-[20px] md:gap-[40px]">
         <div className=" text-right md:p-8">
           <h2 className='max-sm:text-[12px] text-[40px] md:leading-[57.63px] mb-[10px]'>Mission</h2>
           <p className='max-sm:text-[8px] leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]'>
@@ -59,15 +58,18 @@ function About() {
         <Image src={miss} alt="Mission" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
       </div>
     {/* Additional Section */}
-    <div className="mission-section my-10 gap-[20px] md:gap-[40px]">
+    <div className="flex my-10 gap-[20px] items-center md:gap-[40px]">
     <div className="text-justify md:p-8 ">
-        <p className="max-sm:text-[8px]  md:pr-10 leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]">
+        <p className="max-sm:text-[8px] block max-sm:hidden md:pr-10 leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]">
         Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
         Founded on the principles of innovation and sustainability, EstellaEcoCarbon has emerged as a leading force in the activated carbon industry. Our unwavering commitment to excellence has enabled us to develop a comprehensive range of products that cater to diverse applications across various sectors.
         </p>
-       
+       <p className="max-sm:text-[8px] max-sm:block hidden  md:pr-10 leading-[1.5rem] text-[#555] md:leading-[44.4px] md:text-[24px]">
+       Founded on the principles of innovation and sustainability, EstellaEcoCarbon has grown to become a leader in the activated carbon sector. Our state-of-the-art manufacturing facilities and stringent quality control processes ensure that we provide products that meet the highest industry standards.
+       applications across various sectors.
+       </p>
         </div>
-          <Image src={gp} alt="Extra 1" className="max-sm:w-[158px] w-[528px] md:h-[398px]" />
+          <Image src={gp} alt="Extra 1" className="max-sm:w-[158px] max-sm:h-auto w-[528px] md:h-[398px]" />
           {/* <Image src={extraImage2} alt="Extra 2" className="extra-image" /> */}
         
       </div>
