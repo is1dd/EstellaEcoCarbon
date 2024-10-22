@@ -1,4 +1,4 @@
-/* HomePage.css */
+HomePage.css
 .homepage-container {
   font-family: Arial, sans-serif;
  
@@ -148,7 +148,7 @@ align-items: center;
 
   .bnnerr {
     background-image: 
-    
+
       url('../../images/contact.jpeg'); /* Replace with actual image URL */
     background-size: cover;
     background-position: center;

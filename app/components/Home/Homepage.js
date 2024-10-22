@@ -39,7 +39,7 @@ const Homepage = () => {
       ];
   return (
     <div className="">
-      {/* Hero Section */}
+      {/* Banner */}
       <section className="max-sm:h-[24.5rem] 
       
       md:h-[50rem] relative">
